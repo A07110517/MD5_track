@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MD5解密网站</title>
+    <style type="text/css">
+       body{
+           background-image: url(./src/background.jpg);
+        }
+        .aim
+        {
+            text-align: center;
+            margin-top: 150px;
+        }
+       .ans
+       {
+           margin-top: 10px;
+           text-align: center;
+       }
+        #key{
+            width: 300px;
+            height: 50px;
+        }
+        .btn{
+            width:100px;
+            height: 50px;
+            color: #040404;
+            font-size: 18px;
+            background-color: #7aba7b;
+        }
+        .logo1{
+            text-align:center;
+            padding-top: 8%;
+        }
+        #canlogo{
+            width: 260px;
+            height: 100px;
+            margin: 0px auto;
+            color:#7aba7b;
+        }
+        #answer{
+            width: 400px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--logo-->
+<div class="logo1">
+    <canvas id="canlogo">您的浏览器版本过低，请更换浏览器</canvas>
+</div>
+<!--对话框-->
+<div class="aim">
+    <input type="text" name="key" id="key"/>
+    <input type="submit" name="decry" id="decry" class="btn" value="解密"/>
+    <input type="submit" name="encry" id="encry" class="btn" value="加密"/>
+</div>
+<div class="ans">
+   <input type="hidden" name="answer" id="answer"/>
+</div>
+<script type="text/javascript" src="js/logo.js"></script>
+
+</body>
+</html>
